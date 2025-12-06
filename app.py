@@ -21,11 +21,11 @@ api_key = True # 骗过后面的检查逻辑
 # 请将引号里的网址换成你买Key时商家提供的“接口地址”或“Base URL”
 openai.base_url = "https://api.openai-proxy.com/v1/"
 
-    st.markdown("---")
-    st.subheader("汇率与费率设置")
-    exchange_rate = st.number_input("汇率 (USD/CNY)", value=7.2)
-    ref_fee_rate = st.number_input("亚马逊佣金比例 (%)", value=15.0) / 100
-    ad_rate = st.number_input("预估广告占比 (%)", value=20.0) / 100
+st.markdown("---")
+st.subheader("汇率与费率设置")
+exchange_rate = st.number_input("汇率 (USD/CNY)", value=7.2)
+ref_fee_rate = st.number_input("亚马逊佣金比例 (%)", value=15.0) / 100
+ad_rate = st.number_input("预估广告占比 (%)", value=20.0) / 100
 
 # ================= 辅助函数 =================
 def calculate_fba(weight_g):
